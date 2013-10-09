@@ -1,0 +1,44 @@
+[color]
+ ui = true
+ branch = auto
+ diff = auto
+ status = auto
+
+[color "branch"]
+ current = yellow reverse
+ local = yellow
+ remote = green
+
+[color "diff"]
+ meta = yellow bold
+ frag = magenta bold
+ old = red
+ new = cyan
+
+[color "status"]
+ added = yellow
+ changed = green
+ untracked = cyan
+
+[alias]
+# shows list of files that have a merge conflict
+conflicts = diff --name-only --diff-filter=U
+	changes = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+
+# unstages a file. use like 'git unstage filename'
+unstage = reset HEAD --
+
+# resets all uncomitted changes and files
+abort = reset --hard HEAD
+
+# shows diff only for files staged to commit
+new = diff --cached
+
+# shows only changes to files in current directory
+here = status .
+
+# undo last commit
+undo = reset HEAD~1
+
+# change last commit message
+recommit = commit --amend
