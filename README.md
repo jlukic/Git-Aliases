@@ -10,3 +10,5 @@ This is a boilerplate template for gitconfig file with useful aliases.
 * ``git unstage [file]`` - removes file from next commit
 * ``git abort`` - hard resets all uncommitted changes 
 * ``git new`` - shows diff for files stages to be commited only
+* ``git undo`` - removes last commit
+* ``git recommit`` - changes last commit message
