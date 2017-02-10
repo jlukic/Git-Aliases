@@ -1,3 +1,6 @@
+[credential]
+ helper = cache --timeout=3600
+
 [color]
  ui = true
  branch = auto
