@@ -24,6 +24,10 @@
  untracked = cyan
 
 [alias]
+
+# shows last modified local branches
+last = branch --sort=-committerdate
+
 # shows list of files that have a merge conflict
 conflicts = diff --name-only --diff-filter=U
 	changes = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
