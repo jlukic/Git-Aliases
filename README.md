@@ -12,3 +12,4 @@ This is a boilerplate template for gitconfig file with useful aliases.
 * ``git new`` - shows diff for files stages to be commited only
 * ``git undo`` - removes last commit
 * ``git recommit`` - changes last commit message
+* ``git last`` - shows local branches sorted by last modified
