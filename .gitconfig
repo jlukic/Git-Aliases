@@ -49,3 +49,9 @@ undo = reset HEAD~1
 
 # change last commit message
 recommit = commit --amend
+
+# ignore changes from a file
+ignore = update-index --assume-unchanged
+unignore = update-index --no-assume-unchanged
+ignored = !git ls-files -v | grep "^[[:lower:]]"
+
